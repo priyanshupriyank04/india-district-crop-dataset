@@ -1,0 +1,10 @@
+Column Name,Description,Data Type,Example Value
+N,Nitrogen content in soil (essential macronutrient for plant growth),float,90
+P,Phosphorus content in soil (supports root development and energy transfer),float,42
+K,Potassium content in soil (improves plant resistance and metabolism),float,43
+temperature,Ambient temperature (°C) affecting crop growth conditions,float,26.5
+humidity,Relative humidity (%) of the environment,float,80
+ph,Soil pH level indicating acidity or alkalinity of soil,float,6.5
+rainfall,Annual or seasonal rainfall (mm),float,120
+soil_texture,"Categorical soil type describing soil composition (e.g., sandy, clay, loamy)",categorical,loamy
+crop_label,Target crop class label representing recommended crop type,string / categorical,maize

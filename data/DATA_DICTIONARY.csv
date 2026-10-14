@@ -1,0 +1,49 @@
+column,type,unit,source,description,model_input,non_null,nulls,unique,min,mean,max
+district_key,text,-,india_shp_2020,"Census-2011 state code + district code, e.g. 09_146. Primary district identifier.",group key,34903,0,652,,,
+Dist_LGD,integer,-,india_shp_2020,Local Government Directory (LGD) district code,no,34903,0,652,1.0,318.619,678.0
+state,text,-,india_shp_2020,State or union territory (2020 boundaries),no,34903,0,34,,,
+district,text,-,india_shp_2020,District name (2020 boundaries),no,34903,0,646,,,
+crop_year,integer,year,data.gov.in DES,Agricultural year Y means Y/Y+1 (1997-2015),no,34903,0,19,1997,2005.444,2015
+season,text,-,data.gov.in DES,"Kharif, Rabi, Whole Year, Summer, Autumn or Winter",yes (one-hot),34903,0,6,,,
+centroid_lat,float,degrees N,india_shp_2020,Latitude of district representative point,no (would memorise location),34903,0,652,7.0,23.2,34.707
+centroid_lon,float,degrees E,india_shp_2020,Longitude of district representative point,no (would memorise location),34903,0,652,69.621,81.865,96.842
+elevation_m,float,m,NASA POWER,Elevation of the district representative point,yes,34903,0,531,0.41,390.565,5243.7
+soil_ph_h2o_0_5cm,float,pH,ISRIC SoilGrids 2.0,"Soil pH in water, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,5.052,6.694,8.771
+soil_ph_h2o_0_30cm,float,pH,ISRIC SoilGrids 2.0,"Soil pH in water, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,5.05,6.725,8.808
+soil_total_n_g_kg_0_5cm,float,g/kg,ISRIC SoilGrids 2.0,"Total nitrogen, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,0.422,2.162,8.803
+soil_total_n_g_kg_0_30cm,float,g/kg,ISRIC SoilGrids 2.0,"Total nitrogen, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,0.416,1.704,10.58
+soil_soc_g_kg_0_5cm,float,g/kg,ISRIC SoilGrids 2.0,"Soil organic carbon content, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,4.518,24.449,87.32
+soil_soc_g_kg_0_30cm,float,g/kg,ISRIC SoilGrids 2.0,"Soil organic carbon content, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,3.6,15.63,56.727
+soil_cec_cmol_kg_0_5cm,float,cmol(c)/kg,ISRIC SoilGrids 2.0,"Cation exchange capacity, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,9.784,23.628,48.687
+soil_cec_cmol_kg_0_30cm,float,cmol(c)/kg,ISRIC SoilGrids 2.0,"Cation exchange capacity, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,9.361,22.888,48.471
+soil_clay_pct_0_5cm,float,%,ISRIC SoilGrids 2.0,"Clay content, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,17.197,29.947,48.747
+soil_clay_pct_0_30cm,float,%,ISRIC SoilGrids 2.0,"Clay content, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,17.493,31.709,47.613
+soil_sand_pct_0_5cm,float,%,ISRIC SoilGrids 2.0,"Sand content, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,8.434,34.975,60.785
+soil_sand_pct_0_30cm,float,%,ISRIC SoilGrids 2.0,"Sand content, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,7.71,33.867,58.299
+soil_silt_pct_0_5cm,float,%,ISRIC SoilGrids 2.0,"Silt content, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,17.564,35.115,55.844
+soil_silt_pct_0_30cm,float,%,ISRIC SoilGrids 2.0,"Silt content, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,16.635,34.462,55.249
+soil_bulk_density_kg_dm3_0_5cm,float,kg/dm3,ISRIC SoilGrids 2.0,"Bulk density of fine earth, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,1.005,1.358,1.649
+soil_bulk_density_kg_dm3_0_30cm,float,kg/dm3,ISRIC SoilGrids 2.0,"Bulk density of fine earth, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,1.046,1.389,1.678
+soil_org_c_density_kg_m3_0_5cm,float,kg/m3,ISRIC SoilGrids 2.0,"Organic carbon density, 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,11.002,26.94,51.503
+soil_org_c_density_kg_m3_0_30cm,float,kg/m3,ISRIC SoilGrids 2.0,"Organic carbon density, 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,9.555,20.759,35.213
+soil_coarse_frag_pct_0_5cm,float,%,ISRIC SoilGrids 2.0,"Coarse fragments (volumetric), 0-5 cm, district mean of 1 km pixels",no (near-duplicate of 0-30 cm),34903,0,652,4.337,12.381,31.568
+soil_coarse_frag_pct_0_30cm,float,%,ISRIC SoilGrids 2.0,"Coarse fragments (volumetric), 0-30 cm (depth-weighted), district mean of 1 km pixels",yes,34903,0,652,4.172,12.747,33.25
+soil_filled_from_nearest,text,-,derived,"Provenance flag: non-empty only for Mumbai, whose soil was copied from the named neighbour",no,1,34902,1,,,
+temp_mean_c,float,degC,NASA POWER,Mean 2 m air temperature over the season window,yes,34903,0,16927,-18.258,24.243,35.222
+temp_max_c,float,degC,NASA POWER,Mean of monthly maximum 2 m temperature over the season window,yes,34903,0,17495,-8.902,33.983,46.48
+temp_min_c,float,degC,NASA POWER,Mean of monthly minimum 2 m temperature over the season window,yes,34903,0,17015,-28.95,15.531,27.957
+humidity_pct,float,%,NASA POWER,Mean 2 m relative humidity over the season window,yes,34903,0,25340,13.597,59.651,92.728
+rainfall_mm,float,mm,NASA POWER,Total precipitation over the season window,yes,34903,0,25657,0.0,559.77,4785.61
+rain_days_proxy_mm_per_day,float,mm/day,NASA POWER,Mean daily precipitation over the season window,yes,34903,0,12386,0.0,2.9,28.204
+solar_mj_m2_day,float,MJ/m2/day,NASA POWER,Mean all-sky surface shortwave radiation over the season window,yes,34903,0,9790,8.254,17.848,26.43
+wind_m_s,float,m/s,NASA POWER,Mean 2 m wind speed over the season window,yes,34903,0,7391,0.034,1.902,6.166
+annual_rainfall_mm,float,mm,NASA POWER,"Total precipitation, June of crop_year to May of the next year",yes,34903,0,8219,52.13,1192.272,4785.61
+annual_temp_mean_c,float,degC,NASA POWER,"Mean temperature, June of crop_year to May of the next year",yes,34903,0,6095,-8.997,24.729,28.948
+annual_humidity_pct,float,%,NASA POWER,"Mean relative humidity, June of crop_year to May of the next year",yes,34903,0,8001,24.43,60.122,85.926
+dominant_crop,text,-,data.gov.in DES,TARGET. Crop with the largest sown area in this district-year-season,target,34903,0,63,,,
+dominant_share,float,fraction,derived,Dominant crop's share of the season's sown area,no (label leakage),34903,0,27155,0.091,0.722,1.0
+dominant_yield,float,t/ha*,derived,Production / area of the dominant crop. *Source mixes units; 45 blanks,no (label leakage),34858,45,32053,0.0,38.468,88000.0
+top3_crops,text,-,derived,"Three largest crops by area, separated by |",no (label leakage),34903,0,3798,,,
+crops_share_ge_10pct,text,-,derived,"All crops with >=10% of season area, separated by | (multi-label target)",no (label leakage),34902,1,4022,,,
+n_crops,integer,count,derived,Number of crops reported that season,no (label leakage),34903,0,39,1,6.488,42
+total_area_ha,float,ha,data.gov.in DES,Total sown area of the included crops that season,no (label leakage),34903,0,25235,0.28,79544.905,1337325.0

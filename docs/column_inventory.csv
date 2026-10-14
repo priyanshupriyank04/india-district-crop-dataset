@@ -1,0 +1,49 @@
+,dtype,source,non_null,nulls,unique
+district_key,object,india_shp_2020 shapefile,34903,0,652
+Dist_LGD,float64,india_shp_2020 shapefile,34903,0,652
+state,object,data.gov.in crop production,34903,0,34
+district,object,data.gov.in crop production,34903,0,646
+crop_year,int64,data.gov.in crop production,34903,0,19
+season,object,data.gov.in crop production,34903,0,6
+centroid_lat,float64,india_shp_2020 shapefile,34903,0,652
+centroid_lon,float64,india_shp_2020 shapefile,34903,0,652
+elevation_m,float64,NASA POWER,34903,0,531
+soil_ph_h2o_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_ph_h2o_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_total_n_g_kg_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_total_n_g_kg_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_soc_g_kg_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_soc_g_kg_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_cec_cmol_kg_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_cec_cmol_kg_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_clay_pct_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_clay_pct_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_sand_pct_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_sand_pct_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_silt_pct_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_silt_pct_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_bulk_density_kg_dm3_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_bulk_density_kg_dm3_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_org_c_density_kg_m3_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_org_c_density_kg_m3_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_coarse_frag_pct_0_5cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_coarse_frag_pct_0_30cm,float64,SoilGrids 2.0 (ISRIC),34903,0,652
+soil_filled_from_nearest,object,SoilGrids 2.0 (ISRIC),1,34902,1
+temp_mean_c,float64,NASA POWER,34903,0,16927
+temp_max_c,float64,NASA POWER,34903,0,17495
+temp_min_c,float64,NASA POWER,34903,0,17015
+humidity_pct,float64,NASA POWER,34903,0,25340
+rainfall_mm,float64,NASA POWER,34903,0,25657
+rain_days_proxy_mm_per_day,float64,NASA POWER,34903,0,12386
+solar_mj_m2_day,float64,NASA POWER,34903,0,9790
+wind_m_s,float64,NASA POWER,34903,0,7391
+annual_rainfall_mm,float64,NASA POWER,34903,0,8219
+annual_temp_mean_c,float64,NASA POWER,34903,0,6095
+annual_humidity_pct,float64,NASA POWER,34903,0,8001
+dominant_crop,object,data.gov.in crop production,34903,0,63
+dominant_share,float64,data.gov.in crop production,34903,0,27155
+dominant_yield,float64,data.gov.in crop production,34858,45,32053
+top3_crops,object,data.gov.in crop production,34903,0,3798
+crops_share_ge_10pct,object,data.gov.in crop production,34902,1,4022
+n_crops,int64,data.gov.in crop production,34903,0,39
+total_area_ha,float64,data.gov.in crop production,34903,0,25235

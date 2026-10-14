@@ -1,0 +1,296 @@
+==============================================================================
+EDA SUMMARY: India District Crop Dataset 1997-2015
+==============================================================================
+File: data/final/india_district_crop_dataset_1997_2015.csv
+Size on disk: 24.0 MB
+Rows: 34,903   Columns: 48   Duplicate rows: 0
+Memory in pandas: 28.7 MB
+Districts: 652   States/UTs: 34   Years: 1997-2015   Seasons: 6
+
+------------------------------------------------------------------------------
+1. COLUMN INVENTORY (name, dtype, source, non-null, nulls)
+------------------------------------------------------------------------------
+                                   dtype                       source  non_null  nulls  unique
+district_key                      object     india_shp_2020 shapefile     34903      0     652
+Dist_LGD                         float64     india_shp_2020 shapefile     34903      0     652
+state                             object  data.gov.in crop production     34903      0      34
+district                          object  data.gov.in crop production     34903      0     646
+crop_year                          int64  data.gov.in crop production     34903      0      19
+season                            object  data.gov.in crop production     34903      0       6
+centroid_lat                     float64     india_shp_2020 shapefile     34903      0     652
+centroid_lon                     float64     india_shp_2020 shapefile     34903      0     652
+elevation_m                      float64                   NASA POWER     34903      0     531
+soil_ph_h2o_0_5cm                float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_ph_h2o_0_30cm               float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_total_n_g_kg_0_5cm          float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_total_n_g_kg_0_30cm         float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_soc_g_kg_0_5cm              float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_soc_g_kg_0_30cm             float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_cec_cmol_kg_0_5cm           float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_cec_cmol_kg_0_30cm          float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_clay_pct_0_5cm              float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_clay_pct_0_30cm             float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_sand_pct_0_5cm              float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_sand_pct_0_30cm             float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_silt_pct_0_5cm              float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_silt_pct_0_30cm             float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_bulk_density_kg_dm3_0_5cm   float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_bulk_density_kg_dm3_0_30cm  float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_org_c_density_kg_m3_0_5cm   float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_org_c_density_kg_m3_0_30cm  float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_coarse_frag_pct_0_5cm       float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_coarse_frag_pct_0_30cm      float64        SoilGrids 2.0 (ISRIC)     34903      0     652
+soil_filled_from_nearest          object        SoilGrids 2.0 (ISRIC)         1  34902       1
+temp_mean_c                      float64                   NASA POWER     34903      0   16927
+temp_max_c                       float64                   NASA POWER     34903      0   17495
+temp_min_c                       float64                   NASA POWER     34903      0   17015
+humidity_pct                     float64                   NASA POWER     34903      0   25340
+rainfall_mm                      float64                   NASA POWER     34903      0   25657
+rain_days_proxy_mm_per_day       float64                   NASA POWER     34903      0   12386
+solar_mj_m2_day                  float64                   NASA POWER     34903      0    9790
+wind_m_s                         float64                   NASA POWER     34903      0    7391
+annual_rainfall_mm               float64                   NASA POWER     34903      0    8219
+annual_temp_mean_c               float64                   NASA POWER     34903      0    6095
+annual_humidity_pct              float64                   NASA POWER     34903      0    8001
+dominant_crop                     object  data.gov.in crop production     34903      0      63
+dominant_share                   float64  data.gov.in crop production     34903      0   27155
+dominant_yield                   float64  data.gov.in crop production     34858     45   32053
+top3_crops                        object  data.gov.in crop production     34903      0    3798
+crops_share_ge_10pct              object  data.gov.in crop production     34902      1    4022
+n_crops                            int64  data.gov.in crop production     34903      0      39
+total_area_ha                    float64  data.gov.in crop production     34903      0   25235
+
+Columns by source: {'SoilGrids 2.0 (ISRIC)': 21, 'NASA POWER': 12, 'data.gov.in crop production': 11, 'india_shp_2020 shapefile': 4}
+
+------------------------------------------------------------------------------
+2. NULL VALUES
+------------------------------------------------------------------------------
+(soil_filled_from_nearest is a provenance flag, empty by design except Mumbai; excluded below)
+Total null cells: 46 of 1,640,441 (0.0028%)
+Rows with any null: 46
+Columns with nulls: {'dominant_yield': 45, 'crops_share_ge_10pct': 1}
+Feature columns (soil/climate/location) null count: 0
+Note: soil_filled_from_nearest is a flag; it is intentionally empty except Mumbai. dominant_yield null = production not reported by DES.
+
+------------------------------------------------------------------------------
+3. NUMERIC DESCRIPTIVE STATISTICS
+------------------------------------------------------------------------------
+                                   count       mean         std     min       25%        50%         75%          max    skew
+centroid_lat                     34903.0     23.200       5.420   7.000    20.761     24.817      26.627       34.707  -0.889
+centroid_lon                     34903.0     81.865       6.298  69.621    76.741     80.324      86.332       96.842   0.482
+elevation_m                      34903.0    390.565     563.654   0.410   107.640    230.320     447.830     5243.700   4.223
+soil_ph_h2o_0_5cm                34903.0      6.694       0.796   5.052     6.149      6.857       7.256        8.771  -0.300
+soil_ph_h2o_0_30cm               34903.0      6.725       0.808   5.050     6.182      6.911       7.291        8.808  -0.352
+soil_total_n_g_kg_0_5cm          34903.0      2.162       1.241   0.422     1.424      1.679       2.287        8.803   2.165
+soil_total_n_g_kg_0_30cm         34903.0      1.704       1.200   0.416     1.033      1.266       1.918       10.580   3.124
+soil_soc_g_kg_0_5cm              34903.0     24.449      13.830   4.518    14.999     21.009      28.344       87.320   1.716
+soil_soc_g_kg_0_30cm             34903.0     15.630       8.461   3.600     9.898     13.067      17.901       56.727   1.714
+soil_cec_cmol_kg_0_5cm           34903.0     23.628       7.811   9.784    17.938     21.135      28.043       48.687   1.006
+soil_cec_cmol_kg_0_30cm          34903.0     22.888       8.335   9.361    16.778     19.797      28.193       48.471   0.963
+soil_clay_pct_0_5cm              34903.0     29.947       5.743  17.197    26.150     28.897      33.080       48.747   0.716
+soil_clay_pct_0_30cm             34903.0     31.709       5.633  17.493    27.372     30.828      35.382       47.613   0.525
+soil_sand_pct_0_5cm              34903.0     34.975       8.030   8.434    30.156     35.849      40.309       60.785  -0.470
+soil_sand_pct_0_30cm             34903.0     33.867       7.736   7.710    29.584     34.620      38.833       58.299  -0.482
+soil_silt_pct_0_5cm              34903.0     35.115       6.093  17.564    30.466     35.069      39.539       55.844   0.180
+soil_silt_pct_0_30cm             34903.0     34.462       5.992  16.635    29.919     34.609      38.656       55.249   0.161
+soil_bulk_density_kg_dm3_0_5cm   34903.0      1.358       0.142   1.005     1.266      1.356       1.458        1.649  -0.166
+soil_bulk_density_kg_dm3_0_30cm  34903.0      1.389       0.136   1.046     1.312      1.389       1.484        1.678  -0.136
+soil_org_c_density_kg_m3_0_5cm   34903.0     26.940       7.798  11.002    20.595     24.870      31.461       51.503   0.795
+soil_org_c_density_kg_m3_0_30cm  34903.0     20.759       4.704   9.555    17.075     20.025      23.537       35.213   0.646
+soil_coarse_frag_pct_0_5cm       34903.0     12.381       4.464   4.337     8.672     12.012      15.404       31.568   0.476
+soil_coarse_frag_pct_0_30cm      34903.0     12.747       4.878   4.172     8.781     12.245      15.805       33.250   0.581
+temp_mean_c                      34903.0     24.243       5.425 -18.258    21.010     25.279      27.727       35.222  -1.667
+temp_max_c                       34903.0     33.983       5.495  -8.902    31.160     34.160      36.990       46.480  -1.196
+temp_min_c                       34903.0     15.531       6.306 -28.950    10.844     16.823      20.232       27.957  -1.287
+humidity_pct                     34903.0     59.651      17.633  13.597    46.410     61.535      74.436       92.728  -0.343
+rainfall_mm                      34903.0    559.770     598.139   0.000    65.400    376.960     891.575     4785.610   1.493
+rain_days_proxy_mm_per_day       34903.0      2.900       2.924   0.000     0.520      2.132       4.378       28.204   1.650
+solar_mj_m2_day                  34903.0     17.848       2.797   8.254    15.796     17.767      19.380       26.430   0.462
+wind_m_s                         34903.0      1.902       0.795   0.034     1.502      1.882       2.325        6.166   0.235
+annual_rainfall_mm               34903.0   1192.272     592.116  52.130   774.400   1073.220    1484.590     4785.610   1.270
+annual_temp_mean_c               34903.0     24.729       3.764  -8.997    24.481     25.631      26.430       28.948  -4.134
+annual_humidity_pct              34903.0     60.122      12.452  24.430    50.983     60.150      70.552       85.926  -0.200
+dominant_share                   34903.0      0.722       0.232   0.091     0.521      0.748       0.958        1.000  -0.320
+dominant_yield                   34858.0     38.468    1491.970   0.000     0.973      1.863       3.301    88000.000  49.452
+n_crops                          34903.0      6.488       4.750   1.000     2.000      6.000       9.000       42.000   1.040
+total_area_ha                    34903.0  79544.905  122478.109   0.280  3700.000  24189.000  110057.000  1337325.000   2.823
+
+------------------------------------------------------------------------------
+4. TARGET: dominant_crop
+------------------------------------------------------------------------------
+Distinct classes: 63; classes with >=100 rows: 32; >=500: 16; >=1000: 6
+Majority class share: 0.303 (Rice); imbalance ratio top/32nd: 80.2
+Top 32 classes:
+dominant_crop
+Rice                 10587
+Wheat                 4696
+Sugarcane             2720
+Maize                 2158
+Potato                1609
+Rapeseed &Mustard     1432
+Groundnut              900
+Bajra                  768
+Gram                   752
+Jowar                  718
+Cotton(lint)           659
+Jute                   649
+Moong(Green Gram)      641
+Dry chillies           636
+Soyabean               573
+Urad                   532
+Onion                  495
+Guar seed              471
+Sesamum                404
+Banana                 397
+Arhar/Tur              357
+Sunflower              312
+Ragi                   282
+Coriander              245
+Tobacco                193
+Horse-gram             187
+Khesari                168
+Black pepper           163
+Dry ginger             150
+Garlic                 144
+Tapioca                140
+Small millets          132
+
+Dominant crop by season (top 5 each):
+  Autumn      n= 2268: Rice 1895, Maize 328, Jute 22, Ragi 20, Dry chillies 2
+  Kharif      n= 9131: Rice 3928, Maize 972, Bajra 630, Jute 626, Soyabean 537
+  Rabi        n= 8658: Wheat 4679, Rapeseed &Mustard 1422, Gram 748, Jowar 457, Rice 318
+  Summer      n= 4755: Rice 2090, Maize 723, Groundnut 571, Moong(Green Gram) 540, Urad 275
+  Whole Year  n= 7789: Sugarcane 2592, Potato 1481, Dry chillies 612, Guar seed 471, Onion 358
+  Winter      n= 2302: Rice 2284, Sugarcane 12, Wheat 5, Sesamum 1
+
+dominant_share: mean 0.722, median 0.748; share of rows where dominant crop holds >50% of season area: 0.778
+
+------------------------------------------------------------------------------
+5. CATEGORICAL COVERAGE
+------------------------------------------------------------------------------
+Rows per season: {'Kharif': 9131, 'Rabi': 8658, 'Whole Year': 7789, 'Summer': 4755, 'Winter': 2302, 'Autumn': 2268}
+Rows per year: {1997: 1633, 1998: 1793, 1999: 1917, 2000: 2006, 2001: 1900, 2002: 2067, 2003: 2149, 2004: 2219, 2005: 2106, 2006: 2054, 2007: 2082, 2008: 1962, 2009: 1884, 2010: 1958, 2011: 1874, 2012: 1862, 2013: 1781, 2014: 1559, 2015: 97}
+Rows and districts per state:
+                    rows  districts
+state                              
+UTTAR PRADESH       4372         75
+BIHAR               3750         38
+ASSAM               2718         27
+MADHYA PRADESH      2364         51
+ODISHA              2026         30
+MAHARASHTRA         2002         35
+KARNATAKA           1996         30
+WEST BENGAL         1929         18
+GUJARAT             1469         26
+RAJASTHAN           1333         33
+TAMIL NADU          1215         31
+KERALA              1100         14
+HARYANA              951         21
+PUNJAB               912         22
+CHHATTISGARH         885         27
+ARUNACHAL PRADESH    739         18
+ANDHRA PRADESH       675         13
+UTTARAKHAND          627         13
+MEGHALAYA            604         11
+TELANGANA            453         10
+JHARKHAND            441         24
+HIMACHAL PRADESH     398         12
+NAGALAND             368         11
+JAMMU & KASHMIR      327         20
+TRIPURA              240          8
+MANIPUR              236          9
+MIZORAM              216          8
+PUDUCHERRY           183          4
+SIKKIM               152          4
+GOA                   64          2
+DADRA & NAGAR HAVE    48          1
+CHANDIGARH            39          1
+ANDAMAN & NICOBAR     38          3
+LADAKH                33          2
+
+------------------------------------------------------------------------------
+6. FEATURE CORRELATIONS
+------------------------------------------------------------------------------
+Strongest absolute correlations (|r|>0.7):
+elevation_m                      annual_temp_mean_c                -0.940
+temp_mean_c                      temp_min_c                         0.918
+                                 temp_max_c                         0.909
+soil_soc_g_kg_0_30cm             soil_org_c_density_kg_m3_0_30cm    0.898
+soil_bulk_density_kg_dm3_0_30cm  soil_org_c_density_kg_m3_0_30cm   -0.878
+rainfall_mm                      rain_days_proxy_mm_per_day         0.815
+soil_ph_h2o_0_30cm               soil_org_c_density_kg_m3_0_30cm   -0.807
+soil_total_n_g_kg_0_30cm         soil_soc_g_kg_0_30cm               0.783
+soil_ph_h2o_0_30cm               annual_humidity_pct               -0.779
+soil_soc_g_kg_0_30cm             soil_bulk_density_kg_dm3_0_30cm   -0.778
+annual_rainfall_mm               annual_humidity_pct                0.753
+soil_cec_cmol_kg_0_30cm          soil_clay_pct_0_30cm               0.739
+soil_total_n_g_kg_0_30cm         soil_bulk_density_kg_dm3_0_30cm   -0.739
+                                 soil_org_c_density_kg_m3_0_30cm    0.738
+soil_ph_h2o_0_30cm               soil_bulk_density_kg_dm3_0_30cm    0.732
+temp_max_c                       solar_mj_m2_day                    0.720
+                                 annual_temp_mean_c                 0.709
+soil_ph_h2o_0_30cm               soil_soc_g_kg_0_30cm              -0.702
+-> expect to drop one of each near-duplicate pair (0_5cm vs 0_30cm depths, temp_mean vs temp_max, rainfall vs rain_days_proxy).
+
+------------------------------------------------------------------------------
+7. COMPARISON WITH THE KAGGLE (INGLE) DATASET
+------------------------------------------------------------------------------
+                             Kaggle                          New
+rows                           2200                        34903
+features                          7            28 (model inputs)
+classes                          22                           63
+class balance   balanced, 100/class          imbalanced, top=30%
+geography                      none       652 districts, lat/lon
+time                           none         1997-2015, 6 seasons
+provenance        augmented/unknown  4 documented public sources
+missing values                    0                0 in features
+
+Comparable columns: Kaggle ph~soil_ph_h2o_0_30cm, temperature~temp_mean_c, humidity~humidity_pct, rainfall~rainfall_mm, N~soil_total_n_g_kg (different quantity). P and K have no counterpart.
+pH:        Kaggle 6.47 (sd 0.77) | New 6.72 (sd 0.81)
+Temp C:    Kaggle 25.6 (sd 5.1) | New 24.2 (sd 5.4)
+Humidity:  Kaggle 71.5 (sd 22.3) | New 59.7 (sd 17.6)
+Rainfall:  Kaggle 103 mm (sd 55) | New season 560 mm (sd 598), annual 1192 mm
+
+------------------------------------------------------------------------------
+8. HOW THE DATASET WAS BUILT (procedure)
+------------------------------------------------------------------------------
+
+Step 0  Environment: Python venv (.venv) with pandas, geopandas, rasterio, rasterstats, scikit-learn.
+Step 1  Crop statistics (label source): data.gov.in "District-wise, season-wise crop production statistics"
+        1997-98 to 2014-15 (246,091 rows: State, District, Crop_Year, Season, Crop, Area, Production).
+        Downloaded from a public GitHub mirror because the data.gov.in API is rate-limited.
+Step 2  District polygons: india_shp_2020 (GitHub) - 735 districts with Census-2011 and LGD codes.
+Step 3  Soil: ISRIC SoilGrids 2.0, requested through its public WCS service, clipped to the India
+        bounding box (68-98E, 6-38N) at 1 km, for 10 properties x 3 depths (0-5, 5-15, 15-30 cm)
+        = 30 GeoTIFFs. Script: scripts/fetch_soilgrids.py
+Step 4  Climate: NASA POWER monthly API (no key) at each district's representative point, 1997-2016,
+        parameters T2M, T2M_MAX, T2M_MIN, RH2M, PRECTOTCORR, ALLSKY_SFC_SW_DWN, WS2M; elevation from
+        the API response. 735 JSON files. Script: scripts/fetch_nasa_power.py
+Step 5  Crosswalk: match the 652 (state, district) names in the crop table to polygons:
+        559 exact, 54 fuzzy (spelling), 39 manual (renamed/split districts), 0 unmatched.
+        Script: scripts/build_district_crosswalk.py -> data/processed/district_crosswalk.csv
+Step 6  Labels: per district x crop_year x season, exclude plantation crops and aggregate categories,
+        compute area share per crop, take the largest as dominant_crop; also top3, multi-label (>=10%),
+        yield. Paddy merged into Rice. Script: scripts/build_crop_labels.py -> 34,903 rows
+Step 7  Soil features: zonal mean of every 1 km pixel inside each polygon, per depth; 0-30 cm =
+        depth-weighted mean (5:10:15). Values rescaled to physical units (pH, g/kg, %, cmol/kg).
+        Mumbai (urban polygon, no pixels) filled from Mumbai Suburban. Script: build_soil_features.py
+Step 8  Climate features: monthly values aggregated into the season window of that crop year
+        (Kharif Jun-Oct; Rabi Nov-Mar next yr; Whole Year Jun-May; Summer Mar-May next yr;
+        Autumn Sep-Nov; Winter Dec-Feb). Rainfall = sum of mm; others = mean.
+        Script: build_climate_features.py
+Step 9  Merge: labels LEFT JOIN soil ON district_key, LEFT JOIN climate ON (district_key, crop_year,
+        season). Script: build_merged_dataset.py -> data/final/india_district_crop_dataset_1997_2015.csv
+Step 10 Sanity baseline: RandomForest, 32 classes: random 5-fold 0.824; district-grouped 0.709;
+        state-grouped 0.526; majority 0.309.
+
+------------------------------------------------------------------------------
+9. RECOMMENDATIONS BEFORE MODELLING
+------------------------------------------------------------------------------
+
+- Restrict to classes with >=100 (32 classes) or >=500 rows (16 classes) for a stable multi-class task.
+- Use ONLY *_0_30cm soil columns plus the climate columns as model features (drop *_0_5cm duplicates).
+- Never use random k-fold alone: use GroupKFold by district (and report state-grouped and year-split).
+- Do not feed total_area_ha, n_crops, dominant_share, dominant_yield, top3_crops as features: they leak the label.
+- Consider 'Whole Year' season rows separately (perennials such as sugarcane, banana dominate there).
+- Report macro-F1 and per-class recall; accuracy alone is dominated by Rice.

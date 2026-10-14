@@ -1,0 +1,7 @@
+data/raw/
+data/final/eda/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+supplementary_datasets/kaggle_ingle/*.csv
