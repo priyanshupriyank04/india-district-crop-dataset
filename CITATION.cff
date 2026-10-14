@@ -3,9 +3,11 @@ message: "If you use this dataset, please cite it as below, and also cite ISRIC 
 title: "India District Crop Dataset (1997-2015)"
 type: dataset
 authors:
-  - name: "AUTHOR NAMES TO BE ADDED"
+  - alias: "priyanshupriyank04"
 date-released: 2026-10-14
 version: "1.0.0"
 license: CC-BY-4.0
+repository-code: "https://github.com/priyanshupriyank04/india-district-crop-dataset"
+url: "https://github.com/priyanshupriyank04/india-district-crop-dataset"
 keywords: [crop recommendation, precision agriculture, India, SoilGrids, NASA POWER, explainable AI]
 abstract: "34,903 district x year x season rows for 652 Indian districts (1997-2015), joining Government of India crop statistics, SoilGrids 2.0 soil properties and NASA POWER climate. Target: crop with the largest sown area."
