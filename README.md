@@ -38,6 +38,7 @@ docs/
   figures/                                      six EDA plots
   *.csv                                         EDA tables and sample rows
 scripts/                                        the full build pipeline (see Reproduce)
+code/                                           crop-recommendation experiments (SHAP-LIME fusion, see code/README.md)
 supplementary_datasets/                         Kaggle (Ingle), Benue (Nigeria), Ethiopia; separate licences
 ```
 
@@ -148,6 +149,10 @@ bash supplementary_datasets/kaggle_ingle/download.sh  # only needed for the EDA 
 
 Raw downloads go to `data/raw/`, which is git-ignored.
 
+## Experiments
+
+[`code/`](code/) holds the crop-recommendation experiments run on this dataset: SHAP-LIME fused feature selection with nested district-grouped cross-validation, feature-selection and ensemble comparisons, a split-leakage check and explanation-fidelity tests. See [`code/README.md`](code/README.md).
+
 ## Supplementary datasets
 
 [`supplementary_datasets/`](supplementary_datasets/) holds three other public crop-recommendation datasets (Kaggle Ingle, Benue Nigeria, Ethiopia) for comparison. They keep their own licences; see the README in each folder.
@@ -155,7 +160,7 @@ Raw downloads go to `data/raw/`, which is git-ignored.
 ## Licence
 
 - **Data** in `data/` and `docs/`: [CC BY 4.0](LICENSE). It is derived from CC BY 4.0 (SoilGrids), public-domain (NASA POWER) and Government Open Data License – India (data.gov.in) sources; please also credit those sources.
-- **Code** in `scripts/`: [MIT](LICENSE-CODE).
+- **Code** in `scripts/` and `code/`: [MIT](LICENSE-CODE).
 - **Supplementary datasets:** their original licences, listed in each folder.
 
 ## Citation
